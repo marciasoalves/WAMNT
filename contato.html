@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a7d1e099f6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-nav-bar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo1"><img src="images/logo1.png" alt=""></a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="about.html" class="nav-link">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="index.html#sustentabilidade" class="nav-link">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a href="novidades.html" class="nav-link">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="outlet.html" class="nav-link">Showroom</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Digite para pesquisar...">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="corpo-cadastro">
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <fieldset class="formulario-cadastro">
+                <h3>Fale Conosco</h3>
+                <section class="inputBox">
+                    <label for="nome"></label>
+                    <input type="text" placeholder="Nome">
+                </section>
+                <section class="inputBox">
+                    <label for="email"></label>
+                    <input type="email" required placeholder="E-mail">
+                </section>
+                <section class="inputBox">
+                    <label for="whatsapp"></label>
+                    <input type="telefone" required placeholder="Whatsapp">
+                </section>
+                <section class="inputBox">
+                    <p>Sobre o que você quer falar?</p>
+                    <select name="select" class="select">
+                        <option value="Selecione" selected>Selecione uma opção</option>
+                        <option value="Compras">Compras</option>
+                        <option value="Financeiro">Financeiro</option>
+                        <option value="Dúvidas">Dúvidas</option>
+                        <option value="Dúvidas">Outros Assuntos</option>
+                    </select>
+                </section>
+                <section class="inputBox">
+                    <textarea placeholder="Mensagem"></textarea>
+                </section>
+                <section class="inputBox">
+                    <button class="btn"><span><a class="saiba-mais-sustain" href="#">Enviar</a></span></button>
+                    <!-- <input type="submit" value="Enviar"> -->
+                    <p class="last-p">Em breve nossa equipe entrará em contato!</p>
+                </section>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <section class="imagens-logo">
+                <img src="images/logo1.png" alt="logo-rodape" width="150px">
+            </section>
+            <section class="imagens-redes">
+                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="images/whatsapp.png" alt="whatsapp"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+            </section>
+            <section class="copy">
+                <p>© WAMNT - 2021. Todos os direitos reservados.</p>
+            </section>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        });
+    </script>
+    <script src="mobile-navbar.js"></script>
+</body>
+
+</html>

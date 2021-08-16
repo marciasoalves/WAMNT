@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nossa Loja</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <script src="https://kit.fontawesome.com/a7d1e099f6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-nav-bar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo1"><img src="images/logo1.png" alt=""></a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="about.html" class="nav-link">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="index.html#sustentabilidade" class="nav-link">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a href="novidades.html" class="nav-link">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="outlet.html" class="nav-link">Showroom</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Digite para pesquisar...">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="principal">
+        <h1 class="titulo-principal"><span>Q</span>uem <span>S</span>omos</h1>
+        <section class="conteudo1-principal">
+            <section class="paragrafo1-principal">
+                <p>A Wamnt é uma empresa do ramo têxtil desde 2001. Dispomos da maior variedade de tecidos de decoração, tapeçaria, artesanato, moda, tecidos finos e de uniformes. Possuímos parceria com as melhores industrias de tecidos nacional e internacional.
+                    Vendemos e enviamos para todo o Brasil, priorizando qualidade, rapidez e bom preço. Oferecemos vendas no atacado e no varejo. Estamos localizados no edereço: 4 Privet Dr, Bristol BS13 9RN, Reino Unido.
+                </p>
+            </section>
+            <section>
+                <img class="imagem1--conteudo-principal" src="images/pexels-anete-lusina-7256899.jpg" alt="imagem-conteudo">
+            </section>
+        </section>
+        <section class="conteudo2-principal">
+            <div class="divisao-flex2">
+                <section class="paragrafo2-principal">
+                    <figure>
+                        <img class="imagem2-principal" src="images/malhas.jpg" alt="">
+                        <figcaption>
+                            <h4 class="titulo-descricao">Malhas</h4>
+                            <p>
+                                Suplex, Fitness, Helanquinha, Two-Way, Ligalight, Malha Piquet, Montaria, Segunda Pele, Viscolycra, Span, etc. Tecidos: Bengaline, Crepes, Laise, Linho, Musseline, Paetê, Renda Guipir, Suiça, Soft, Tactel, Viscose, Tulê, Jeans, Tencel etc.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="paragrafo2-principal">
+                    <figure>
+                        <img class="imagem2-principal" src="images/responsabilidade.jpg" alt="">
+                        <figcaption>
+                            <h4 class="titulo-descricao">Missão</h4>
+                            Agir com responsabilidade e atuar sempre em busca da melhoria dos processos de desenvolvimento dos produtos para satisfazer nossos clientes e colaboradores.
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
+            <div class="divisao-flex2">
+                <section class="paragrafo2-principal">
+                    <figure>
+                        <img class="imagem2-principal" src="images/presença.jpg" alt="">
+                        <figcaption>
+                            <h4 class="titulo-descricao">Visão</h4>
+                            De forma segura e transparente, ter forte presença no mercado através da excelência e eficiência operacional.
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="paragrafo2-principal">
+                    <figure>
+                        <img class="imagem2-principal" src="images/inovação.jpg" alt="">
+                        <figcaption>
+                            <h4 class="titulo-descricao">Valores</h4>
+                            <ul class="lista-valores">
+                                <li><i class="fa fa-heart" aria-hidden="true"></i> Respeito à vida;</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i> Integração;</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i> Inovação e Tecnologia;</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i> Ética.</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <section class="imagens-logo">
+                <img src="images/logo1.png" alt="logo-rodape" width="150px">
+            </section>
+            <section class="imagens-redes">
+                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="images/whatsapp.png" alt="whatsapp"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+            </section>
+            <section class="copy">
+                <p>© WAMNT - 2021. Todos os direitos reservados.</p>
+            </section>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+    <script src="mobile-navbar.js"></script>
+</body>
+
+</html>

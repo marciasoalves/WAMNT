@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+:root {
+    --cor-corpo-principal: ;
+    --cor-footer: #3f3d40;
+    --cor-titulo: #313131;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background-color: var(--cor-footer);
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    height: 20vh;
+    color: white;
+    font-size: 1.7em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagens-redes img {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.principal {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-size: cover;
+    padding-top: 20vh;
+    padding-bottom: 4vh;
+    flex-direction: column;
+}
+
+
+/* Estilização about */
+
+figure {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 30vw;
+    font-size: 16px;
+}
+
+.conteudo1-principal {
+    color: white;
+    display: flex;
+    padding-top: 3vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteudo2-principal {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    color: #FFF;
+    font-size: 45px;
+    margin-bottom: 2vh;
+    font-variant: small-caps;
+}
+
+.titulo-principal span {
+    font-size: 50px;
+    color: #c4963d;
+}
+
+.paragrafo1-principal p {
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 3vw;
+    margin-left: 4vw;
+    line-height: 2;
+}
+
+.paragrafo2-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45vw;
+    margin: 0 0.35vw;
+    padding: 1vw;
+}
+
+.imagem1--conteudo-principal {
+    width: 40.5vw;
+    height: 64vh;
+    border-radius: 5px;
+    margin-right: 5vw;
+}
+
+.imagem2-principal {
+    width: 30vw;
+    border-radius: 5px;
+}
+
+.titulo-descricao {
+    margin-bottom: 1vh;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lista-valores {
+    list-style: none;
+}
+
+.divisao-flex2 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+/* Fim da estilização do about */
+
+
+/*Aba showroom */
+
+.outlet-banner {
+    width: 100%;
+    min-height: 100vh;
+    background: url("images/pexels-caique-silva-745469.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#container-outlet1 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#container-outlet2 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    margin-top: 10%;
+}
+
+#container-outlet3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulos-outlet {
+    font-size: 2em;
+    text-align: center;
+    padding: 5px;
+}
+
+.paragrafos-outlet {
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 5px;
+    line-height: 150%;
+}
+
+.section-outlet1 {
+    width: 100vw;
+    margin: 0 auto;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-outlet2 {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-outlet3 {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto1-outlet {
+    width: 40vw;
+    font-size: 1rem;
+}
+
+.texto2-outlet {
+    width: 25vw;
+}
+
+.texto3-outlet {
+    width: 25vw;
+    padding-top: 15vh;
+}
+
+.img-outlet {
+    width: 40vw;
+}
+
+.imagens {
+    width: 300px;
+    height: 200px;
+}
+
+.galeria-outlet {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria-outlet,
+img {
+    margin: 2vh 1vw;
+}
+
+
+/*Fim da aba showroom */
+
+
+/* Abas novidades */
+
+.novidades-main {
+    height: 200vh;
+}
+
+.banner-codigo {
+    width: 28vw;
+    height: 7vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: sticky;
+    bottom: 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.codigo {
+    color: #c4963d;
+}
+
+.clique-codigo {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.banner-codigo h4 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.p-codigo {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.bg-novidades {
+    width: 100%;
+    min-height: 100vh;
+    background: url("images/pexels-cottonbro-5119200.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-novidades::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.boxnov {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.bloco {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 50vh);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.bloco .card {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+
+.bloco .card .imgnov {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.bloco .card .imgnov img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.bloco .card:hover .imgnov img {
+    transform: scale(1.5);
+}
+
+.bloco .card .content .nomenov h3 {
+    font-size: 1.8em;
+    font: 500;
+    text-align: center;
+    margin-top: 0.5vh;
+}
+
+.bloco .card .content .preco_nov {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloco .card .content .preco_nov h2 {
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+    position: relative;
+    left: 0.8vw;
+}
+
+.bloco .card .content .preco_nov {
+    color: yellow;
+    cursor: pointer;
+}
+
+.bloco .card .content .preco_nov .grey {
+    color: grey;
+}
+
+
+/* aqui termina a aba novidades */
+
+
+/*estilização da pag contato*/
+
+.imagemmenu::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.corpo-cadastro {
+    background-image: url(images/bg-contato.jpeg);
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+}
+
+.formulario-cadastro {
+    padding: 30px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    height: 65vh;
+    position: relative;
+    margin: 0 auto;
+    top: 150px;
+    border-radius: 15px;
+}
+
+.formulario-cadastro h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.formulario-cadastro .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formulario-cadastro .inputBox input,
+.formulario-cadastro .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: rgb(221, 27, 27);
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.formulario-cadastro .inputBox p {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.last-p {
+    text-align: center;
+}
+
+.formulario-cadastro .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #c4963d;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    height: 26vh;
+    font-size: 0.7em;
+}
+
+
+/*fim da estilização da página contato*/
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #c4963d;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .search-box {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+        height: 8vh;
+    }
+    .nav-link {
+        position: absolute;
+        right: 0;
+        display: contents;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .nav-list li a {
+        color: #c4963d;
+    }
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        right: 50px;
+    }
+    .logo1 {
+        position: absolute;
+        left: 50px;
+    }
+    .imagem1--conteudo-principal {
+        display: none;
+    }
+    .conteudo2-principal {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    figure {
+        width: 50%;
+    }
+    .formulario-cadastro {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 510px) {
+    html {
+        overflow-x: hidden;
+    }
+    .search-box {
+        display: none;
+    }
+    .h1-hero,
+    .h2-hero {
+        display: block;
+        position: absolute;
+        font-size: 3rem;
+    }
+    .hero {
+        max-width: 100vw;
+        min-height: 100vh;
+        background: url("images/banner.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .wamnt-container {
+        display: flex;
+        justify-content: flex-end;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .conteudo1-principal {
+        flex-direction: column;
+    }
+    .imagem1--conteudo-principal {
+        width: 80vw;
+        height: 50vh;
+        margin-top: 3vw;
+    }
+    .imagem2-principal {
+        width: 33vw;
+        height: 30vh;
+        text-align: center;
+    }
+    .conteudo2-principal {
+        flex-wrap: wrap;
+    }
+    figcaption {
+        font-size: 16px;
+    }
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .imagens-redes img {
+        width: 30px;
+        height: 30px;
+    }
+    .lista-valores ul li {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .imagem1--conteudo-principal {
+        width: 46vw;
+        height: 45vh;
+    }
+}
+
+
+/* Media query Formulário */
+
+@media screen and (max-width: 480px) {
+    .formulario-cadastro {
+        margin-top: 140px;
+        width: 40vw;
+        height: 85vh;
+    }
+    .formulario-cadastro p {
+        font-size: 13px;
+        text-align: center;
+    }
+    .formulario-cadastro label {
+        font-size: 14px;
+        text-align: center;
+    }
+    footer {
+        padding: 0;
+    }
+    .imagens-redes img {
+        width: 30px;
+        height: 30px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .formulario-cadastro {
+        margin-top: 140px;
+        width: 40vw;
+        height: 85vh;
+    }
+    .formulario-cadastro p {
+        font-size: 13px;
+        text-align: center;
+    }
+    .formulario-cadastro label {
+        font-size: 14px;
+        text-align: center;
+    }
+    footer {
+        padding: 0;
+    }
+    .imagens-redes img {
+        width: 30px;
+        height: 30px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .formulario-cadastro {
+        margin-top: 140px;
+        width: 40vw;
+        height: 85vh;
+        margin-bottom: 60px;
+    }
+    .formulario-cadastro p {
+        font-size: 13px;
+        text-align: center;
+    }
+    .formulario-cadastro label {
+        font-size: 14px;
+        text-align: center;
+    }
+    input,
+    select {
+        height: 3vh;
+        width: 33vw;
+    }
+    footer {
+        padding: 0;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+    margin-top: 20px;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}

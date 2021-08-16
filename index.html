@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAMNT!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a7d1e099f6.js" crossorigin="anonymous"></script>
+    <!-- Tomé Luan, Weslley Brilhante -->
+</head>
+<header class="header-nav-bar">
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="logo1"><img src="images/logo1.png" alt=""></a>
+            <!-- menu hamburguer -->
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <!-- menu normal -->
+            <ul class="nav-list">
+                <li>
+                    <a href="about.html" class="nav-link">Quem somos</a>
+                </li>
+                <li>
+                    <a href="#sustentabilidade" class="nav-link">Sustentabilidade</a>
+                </li>
+                <li>
+                    <a href="novidades.html" class="nav-link">Novidades</a>
+                </li>
+                <li>
+                    <a href="outlet.html" class="nav-link">Showroom</a>
+                </li>
+                <li>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <!-- search box -->
+            <div class="search-box">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+                <input type="text" class="input-search" placeholder="Digite para pesquisar...">
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <!-- imagem hero e texto principal -->
+    <section class="hero">
+        <div class="wamnt-container">
+            <h1 class="h1-hero">We Are MeaNt To be</h1>
+            <h2 class="h2-hero">#Together!</h2>
+        </div>
+    </section>
+    <!-- sustentabilidade -->
+    <section id="sustentabilidade">
+        <div class="sustain-container">
+            <h1 class="main-h1"><span>S</span>ustentabilidade</h1>
+            <p class="sustain-paragraph">Estamos comprometidos a entregar produtos sustentáveis, pautados em inovação, conhecimento técnico e qualidade. Para nós a Sustentabilidade é a cultura que permeia todo o negócio, desde nossa forma de fazer governança até a entrega de produtos
+                sustentáveis para a indústria do vestuário.</p>
+            <button class="btn"><span><a class="saiba-mais-sustain" href="https://www.unep.org/explore-topics/sustainable-development-goals" target="_blank">Saiba mais</a></span></button>
+        </div>
+        <img class="sustain-image" src="images/pexels-zhanna-fort-7833644.jpg" alt="Imagem bolsa de compras sustentável">
+    </section>
+    <!-- programa UNEP -->
+    <section class="unep">
+        <h1 class="unep-h1">Programa das Nações Unidas para o Meio Ambiente (UNEP)</h1>
+        <div class="unep-container">
+            <div class="video-unep">
+                <iframe width="500" height="281" src="https://www.youtube.com/embed/T_bjLgLn1AI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="unep-container-p-btn">
+                <p class="unep-p">Nossa indústria e toda sua cadeia produtiva estão inseridas no programa global para a proteção do meio ambiente e à promoção do desenvolvimento sustentável apoiados pela UNEP (United Nations Environment Programme).</p>
+                <button class="btn"><span><a class="saiba-mais-sustain" href="https://www.unep.org/"
+                            target="_blank">UNEP.org</a></span></button>
+            </div>
+        </div>
+    </section>
+    <!-- localização com mapa iFrame -->
+    <section>
+        <h1 class="main-h1"><span>L</span>ocalização</h1>
+        <section class="localwamnt">
+
+            <section class="contato">
+                <p class="unep-p"><img src="images/local.png" class="icones">4 Privet Dr, Bristol BS13 9RN, Reino Unido</p>
+                <p class="unep-p"><img src="images/oemail.png" class="icones">atendimento@wamnt.com.br</p>
+                <p class="unep-p"><img src="images/tele.png" class="icones">Central de atendimento: 4420 865-7422</p>
+            </section>
+            <section class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.566947853699!2d-2.606329884869121!3d51.411011279619345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718c0f8a384a11%3A0xe8cc4e85995fcb0d!2s4%20Privet%20Dr%2C%20Bristol%20BS13%209RN%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1627855173002!5m2!1spt-BR!2sbr"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" class="localizacao"></iframe>
+            </section>
+        </section>
+</main>
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+        <section class="imagens-logo">
+            <img src="images/logo1.png" alt="logo-rodape" width="150px">
+        </section>
+        <section class="imagens-redes">
+            <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="images/whatsapp.png" alt="whatsapp"></a>
+            <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+        </section>
+        <section class="copy">
+            <p>© WAMNT - 2021. Todos os direitos reservados.</p>
+        </section>
+    </div>
+</footer>
+
+<script>
+    window.addEventListener('scroll', function() {
+        let header = document.querySelector('header');
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle('scrolling-active', windowPosition);
+    });
+</script>
+<script src="mobile-navbar.js"></script>
+</body>
+<!-- Alessandra Murat, Márcia Alves, Natali Lucas-->
+
+</html>

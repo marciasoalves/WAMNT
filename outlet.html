@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a7d1e099f6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-nav-bar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo1"><img src="images/logo1.png" alt=""></a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="about.html" class="nav-link">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="index.html#sustentabilidade" class="nav-link">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a href="novidades.html" class="nav-link">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="outlet.html" class="nav-link">Showroom</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Digite para pesquisar...">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="outlet-banner"></section>
+        <section id="container-outlet1">
+            <section class="section-outlet1">
+                <img class="img-outlet" src="./images/img-outlet1.jpg" alt="Imagem tecelando uma malha">
+                <section class="texto1-outlet">
+                    <h2 class="titulos-outlet">Moda e Sustentabilidade Andando Juntos</h2>
+                    <p class="paragrafos-outlet">
+                        Por mais incerto que seja o futuro, nós da WAMNT somos comprometidos com a tomada de decisões acertivas não só como empresa. Mas no que diz a respeito ao desenvolvimento de novos produtos texteis por meio de inovação e comprometimento diante dos desafios
+                        que temos pela frente.
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section id="container-outlet2">
+            <section class="section-outlet2">
+                <section class="texto2-outlet">
+                    <h2 class="titulos-outlet">Sustentabilidade se constroi diariamente</h2>
+                    <p class="paragrafos-outlet">
+                        Em constante processo de crescimento nossa preocupações é crescer de forma sustentável. Nós valorizamos a diversidade, relações duradoras e o respeito para com a cultura do nosso público. Para tanto desenvolvemos a Responsabilidade Sócio Ambiental e Promoção
+                        da Ética.
+                    </p>
+                </section>
+                <img class="img-outlet" src="images/pexels-tuấn-kiệt-jr-3557550.jpg" alt="Tingimento do tecido">
+            </section>
+        </section>
+        <section id="container-outlet3">
+            <section class="section-outlet3">
+                <section class="texto3-outlet">
+                    <h2 class="titulos-outlet">Nós produzimos o melhor para seu público</h2>
+                    <p class="paragrafos-outlet paragrafo-galeria">
+                        Se permita e desfrute do conforto com tecidos WAMNT.
+                    </p>
+                </section>
+                <div class="galeria-outlet">
+                    <img class="imagens" src="./images/img-outlet3.jpeg" alt="Tecidos tingidos">
+                    <img class="imagens" src="./images/img-outlet4.jpeg" alt="Tecidos tingidos">
+                    <img class="imagens" src="./images/img-outlet5.jpg" alt="Tecidos tingidos">
+                    <img class="imagens" src="./images/img-outlet6.jpg" alt="Tecidos tingidos">
+                    <img class="imagens" src="./images/img-outlet7.jpg" alt="Tecidos tingidos">
+                    <img class="imagens" src="./images/img-outlet8.jpg" alt="Tecidos tingidos">
+                    <img class="imagens" src="./images/img-outlet9.jpg" alt="Tecidos tingidos">
+                    <img class="imagens" src="./images/img-outlet10.jpg" alt="Tecidos tingidos">
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <section class="imagens-logo">
+                <img src="images/logo1.png" alt="logo-rodape" width="150px">
+            </section>
+            <section class="imagens-redes">
+                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="images/whatsapp.png" alt="whatsapp"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+            </section>
+            <section class="copy">
+                <p>© WAMNT - 2021. Todos os direitos reservados.</p>
+            </section>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        });
+    </script>
+    <script src="mobile-navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novidades</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a7d1e099f6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-nav-bar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo1"><img src="images/logo1.png" alt=""></a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="about.html" class="nav-link">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="index.html#sustentabilidade" class="nav-link">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="nav-link">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="outlet.html" class="nav-link">Showroom</a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Digite para pesquisar...">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="novidades-main">
+        <section class="bg-novidades"></section>
+        <section class="boxnov">
+            <section class="bloco">
+                <section class="card">
+                    <section class="imgnov">
+                        <img src="images/1.png" alt="">
+                    </section>
+                    <section class="content">
+                        <section class="nomenov">
+                            <h3>Conjunto Social Feminino</h3>
+                        </section>
+                        <section class="preco_nov">
+                            <h2>R$ 229,90</h2>
+                            <section class="nov">
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa grey fa-star" aria-hidden="true"></i>
+                                <i class="fa grey fa-star" aria-hidden="true"></i>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="bloco">
+                <section class="card">
+                    <section class="imgnov">
+                        <img src="images/2.png" alt="">
+                    </section>
+                    <section class="content">
+                        <section class="nomenov">
+                            <h3>Casaco Animal Print</h3>
+                        </section>
+                        <section class="preco_nov">
+                            <h2>R$ 169,90</h2>
+                            <section class="nov">
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+            <section class="bloco">
+                <section class="card">
+                    <section class="imgnov">
+                        <img src="images/3.png" alt="">
+                    </section>
+                    <section class="content">
+                        <section class="nomenov">
+                            <h3>Blazer Abstrato</h3>
+                        </section>
+                        <section class="preco_nov">
+                            <h2>R$ 189,90</h2>
+                            <section class="nov">
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa  fa-star" aria-hidden="true"></i>
+                                <i class="fa grey fa-star" aria-hidden="true"></i>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section class="banner-codigo">
+                    <h4>Clicou ganhou!</h4>
+                    <p class="p-codigo">Use o cupom <span class="codigo">WAMNT10</span> e ganhe 10% de desconto em compras acima de 100R$.</p>
+                    <p class="clique-codigo">Clique para aproveitar.</p>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <section class="imagens-logo">
+                <img src="images/logo1.png" alt="logo-rodape" width="150px">
+            </section>
+            <section class="imagens-redes">
+                <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="images/whatsapp.png" alt="whatsapp"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+            </section>
+            <section class="copy">
+                <p>© WAMNT - 2021. Todos os direitos reservados.</p>
+            </section>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        });
+    </script>
+    <script src="mobile-navbar.js"></script>
+</body>
+
+</html>
